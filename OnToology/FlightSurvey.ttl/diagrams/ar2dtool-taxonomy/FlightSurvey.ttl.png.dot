@@ -1,0 +1,28 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "FlightsSurvey:Neutral" "FlightsSurvey:Detractor" "FlightsSurvey:High_Season_Survey" "FlightsSurvey:Month" "FlightsSurvey:Solo_Survey" "FlightsSurvey:NPS" "FlightsSurvey:Survey_by_Seat_Type" "FlightsSurvey:BusinessClassSurvey" "FlightsSurvey:Promoter" "FlightsSurvey:First_Class_Survey" "FlightsSurvey:Economy_Class_Survey" "http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title" "FlightsSurvey:Couple_Survey" "FlightsSurvey:Business_Survey" "FlightsSurvey:Day" "FlightsSurvey:Low_Season_Survey" "FlightsSurvey:Date" "FlightsSurvey:Year" "FlightsSurvey:Family_Survey" "FlightsSurvey:Survey_By_Type_Of_Traveller" "http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc" "FlightsSurvey:Survey_by_Season" "FlightsSurvey:Survey" ; /*classes style*/
+	"http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc" -> "FlightsSurvey:Survey" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:First_Class_Survey" -> "FlightsSurvey:Survey_by_Seat_Type" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:Month" -> "FlightsSurvey:Date" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:Detractor" -> "FlightsSurvey:NPS" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:Survey_By_Type_Of_Traveller" -> "FlightsSurvey:Survey" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:Day" -> "FlightsSurvey:Date" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:BusinessClassSurvey" -> "FlightsSurvey:Survey_by_Seat_Type" [ label = "rdfs:subClassOf" ];
+	"owl:Thing" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:High_Season_Survey" -> "FlightsSurvey:Survey_by_Season" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:Low_Season_Survey" -> "FlightsSurvey:Survey_by_Season" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:Survey_by_Seat_Type" -> "FlightsSurvey:Survey" [ label = "rdfs:subClassOf" ];
+	"http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title" -> "FlightsSurvey:Survey" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:Couple_Survey" -> "FlightsSurvey:Survey_By_Type_Of_Traveller" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:Survey_by_Season" -> "FlightsSurvey:Survey" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:Solo_Survey" -> "FlightsSurvey:Survey_By_Type_Of_Traveller" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:Business_Survey" -> "FlightsSurvey:Survey_By_Type_Of_Traveller" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:Family_Survey" -> "FlightsSurvey:Survey_By_Type_Of_Traveller" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:Promoter" -> "FlightsSurvey:NPS" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:Economy_Class_Survey" -> "FlightsSurvey:Survey_by_Seat_Type" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:Neutral" -> "FlightsSurvey:NPS" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:Year" -> "FlightsSurvey:Date" [ label = "rdfs:subClassOf" ];
+	"FlightsSurvey:NPS" -> "FlightsSurvey:Survey" [ label = "rdfs:subClassOf" ];
+
+}
