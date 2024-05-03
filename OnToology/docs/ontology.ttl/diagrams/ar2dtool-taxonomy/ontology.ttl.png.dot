@@ -1,0 +1,28 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Neutral" "base:Detractor" "base:High_Season_Survey" "base:Month" "base:Solo_Survey" "base:NPS" "base:Survey_by_Seat_Type" "base:BusinessClassSurvey" "base:Promoter" "base:First_Class_Survey" "base:Economy_Class_Survey" "http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title" "base:Couple_Survey" "base:Business_Survey" "base:Day" "base:Low_Season_Survey" "http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc" "base:Date" "base:Year" "base:Family_Survey" "base:Survey_By_Type_Of_Traveller" "base:Survey_by_Season" "base:Survey" ; /*classes style*/
+	"http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc" -> "base:Survey" [ label = "rdfs:subClassOf" ];
+	"base:First_Class_Survey" -> "base:Survey_by_Seat_Type" [ label = "rdfs:subClassOf" ];
+	"base:Month" -> "base:Date" [ label = "rdfs:subClassOf" ];
+	"base:Detractor" -> "base:NPS" [ label = "rdfs:subClassOf" ];
+	"base:Survey_By_Type_Of_Traveller" -> "base:Survey" [ label = "rdfs:subClassOf" ];
+	"base:Day" -> "base:Date" [ label = "rdfs:subClassOf" ];
+	"base:BusinessClassSurvey" -> "base:Survey_by_Seat_Type" [ label = "rdfs:subClassOf" ];
+	"owl:Thing" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:High_Season_Survey" -> "base:Survey_by_Season" [ label = "rdfs:subClassOf" ];
+	"base:Low_Season_Survey" -> "base:Survey_by_Season" [ label = "rdfs:subClassOf" ];
+	"base:Survey_by_Seat_Type" -> "base:Survey" [ label = "rdfs:subClassOf" ];
+	"http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title" -> "base:Survey" [ label = "rdfs:subClassOf" ];
+	"base:Couple_Survey" -> "base:Survey_By_Type_Of_Traveller" [ label = "rdfs:subClassOf" ];
+	"base:Survey_by_Season" -> "base:Survey" [ label = "rdfs:subClassOf" ];
+	"base:Solo_Survey" -> "base:Survey_By_Type_Of_Traveller" [ label = "rdfs:subClassOf" ];
+	"base:Business_Survey" -> "base:Survey_By_Type_Of_Traveller" [ label = "rdfs:subClassOf" ];
+	"base:Family_Survey" -> "base:Survey_By_Type_Of_Traveller" [ label = "rdfs:subClassOf" ];
+	"base:Promoter" -> "base:NPS" [ label = "rdfs:subClassOf" ];
+	"base:Economy_Class_Survey" -> "base:Survey_by_Seat_Type" [ label = "rdfs:subClassOf" ];
+	"base:Neutral" -> "base:NPS" [ label = "rdfs:subClassOf" ];
+	"base:Year" -> "base:Date" [ label = "rdfs:subClassOf" ];
+	"base:NPS" -> "base:Survey" [ label = "rdfs:subClassOf" ];
+
+}
