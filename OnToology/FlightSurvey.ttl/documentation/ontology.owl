@@ -1,0 +1,1835 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#"
+     xml:base="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:FlightsSurvey="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAircraft -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAircraft">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft"/>
+        <rdfs:comment>has Aircraft</rdfs:comment>
+        <rdfs:label>hasAircraft</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAirline -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAirline">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline"/>
+        <rdfs:comment>has Airline</rdfs:comment>
+        <rdfs:label>hasAirline</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDate -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date"/>
+        <rdfs:comment>has Date</rdfs:comment>
+        <rdfs:label>hasDate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDateFlown -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDateFlown">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date"/>
+        <rdfs:comment>has Date Flown</rdfs:comment>
+        <rdfs:label>hasDateFlown</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDestination -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDestination">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination"/>
+        <rdfs:comment>has Destination</rdfs:comment>
+        <rdfs:label>hasDestination</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOrigin -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOrigin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin"/>
+        <rdfs:comment>has Origin</rdfs:comment>
+        <rdfs:label>hasOrigin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger"/>
+        <rdfs:comment>The passenger of the survey</rdfs:comment>
+        <rdfs:label>hasPassenger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPublished -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPublished">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger"/>
+        <rdfs:comment>has Published</rdfs:comment>
+        <rdfs:label>hasPublished</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasSeatType -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasSeatType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type"/>
+        <rdfs:comment>has Seat Type</rdfs:comment>
+        <rdfs:label>hasSeatType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasTypeOfTravel -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasTypeOfTravel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller"/>
+        <rdfs:comment>has Type of Travel</rdfs:comment>
+        <rdfs:label>hasTypeOfTraveller</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isFrom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country"/>
+        <rdfs:comment>Passenger isFrom</rdfs:comment>
+        <rdfs:label>isFrom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasMonth -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasMonth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>The month of the survey</rdfs:comment>
+        <rdfs:label>hasMonth</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>has Overall Rating</rdfs:comment>
+        <rdfs:label>hasOverallRating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isVerified -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isVerified">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>[0-&gt; Not verified ; 1-&gt;Verified]</rdfs:comment>
+        <rdfs:label>isVerified</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BusinessClassSurvey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BusinessClassSurvey">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_by_Seat_Type"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasSeatType"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BusinessClass"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_by_Seat_Type"/>
+        <rdfs:comment>Surveys of BussinessClass</rdfs:comment>
+        <rdfs:label>Bussiness Class Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Business_Survey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Business_Survey">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_By_Type_Of_Traveller"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasTypeOfTravel"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Business"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_By_Type_Of_Traveller"/>
+        <rdfs:comment>Surveys of business travellers</rdfs:comment>
+        <rdfs:label>Business Traveller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country">
+        <rdfs:comment>The country of the passenger</rdfs:comment>
+        <rdfs:label>Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Couple_Survey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Couple_Survey">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_By_Type_Of_Traveller"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasTypeOfTravel"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#CoupleLeisure"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_By_Type_Of_Traveller"/>
+        <rdfs:comment>Surveys of couple leisure travellers</rdfs:comment>
+        <rdfs:label>Couple Leisure Traveller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date">
+        <rdfs:comment>The date of the survey</rdfs:comment>
+        <rdfs:label>Date</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Date</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Day -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Day">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date"/>
+        <rdfs:comment>Survey&apos;s day</rdfs:comment>
+        <rdfs:label>Day</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Detractor -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Detractor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NPS"/>
+        <rdfs:comment>Overall rating less than 7</rdfs:comment>
+        <rdfs:label>Detractor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Economy_Class_Survey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Economy_Class_Survey">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_by_Seat_Type"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasSeatType"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#EconomyClass"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_by_Seat_Type"/>
+        <rdfs:comment>Surveys of Economy Class</rdfs:comment>
+        <rdfs:label>Economy Class Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Family_Survey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Family_Survey">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_By_Type_Of_Traveller"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasTypeOfTravel"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#FamilyLeisure"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_By_Type_Of_Traveller"/>
+        <rdfs:comment>Surveys of family leisure travellers</rdfs:comment>
+        <rdfs:label>Family Leisure Traveller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#First_Class_Survey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#First_Class_Survey">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_by_Seat_Type"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasSeatType"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#FirstClass"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_by_Seat_Type"/>
+        <rdfs:comment>Surveys of Firsts Class</rdfs:comment>
+        <rdfs:label>First Class Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#High_Season_Survey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#High_Season_Survey">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_by_Season"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasMonth"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdfs:Datatype>
+                                        <owl:oneOf>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </owl:oneOf>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:oneOf>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </owl:oneOf>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:oneOf>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </owl:oneOf>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:oneOf>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </owl:oneOf>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:oneOf>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </owl:oneOf>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:oneOf>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </owl:oneOf>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:oneOf>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </owl:oneOf>
+                                    </rdfs:Datatype>
+                                </owl:unionOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_by_Season"/>
+        <rdfs:comment>High season surveys</rdfs:comment>
+        <rdfs:label>High Season Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Low_Season_Survey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Low_Season_Survey">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_by_Season"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasMonth"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdfs:Datatype>
+                                        <owl:oneOf>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </owl:oneOf>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:oneOf>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </owl:oneOf>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:oneOf>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </owl:oneOf>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:oneOf>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </owl:oneOf>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:oneOf>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </owl:oneOf>
+                                    </rdfs:Datatype>
+                                </owl:unionOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_by_Season"/>
+        <rdfs:comment>Low season surveys</rdfs:comment>
+        <rdfs:label>Low Season Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Month -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Month">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date"/>
+        <rdfs:comment>Survey&apos;s Month</rdfs:comment>
+        <rdfs:label>Month</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NPS -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NPS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:comment>NPS extracted from  survey&apos;s Overall Rating.</rdfs:comment>
+        <rdfs:label>NPS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Neutral -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Neutral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NPS"/>
+        <rdfs:comment>Overall rating between 7 and 9</rdfs:comment>
+        <rdfs:label>Neutral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Promoter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Promoter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NPS"/>
+        <rdfs:comment>Overall rating greater or equal  than 7</rdfs:comment>
+        <rdfs:label>Promoter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Solo_Survey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Solo_Survey">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_By_Type_Of_Traveller"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasTypeOfTravel"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#SoloLeisure"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_By_Type_Of_Traveller"/>
+        <rdfs:comment>Surveys of solo leisure travellers</rdfs:comment>
+        <rdfs:label>Solo Leisure Traveller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey">
+        <rdfs:comment>Survey data</rdfs:comment>
+        <rdfs:label>Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_By_Type_Of_Traveller -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_By_Type_Of_Traveller">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasTypeOfTravel"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:comment>Survey By Type Of Traveller</rdfs:comment>
+        <rdfs:label>Survey By Type Of Traveller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_by_Season -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_by_Season">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasMonth"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:comment>Surveys by seasons</rdfs:comment>
+        <rdfs:label>Survey By Season</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_by_Seat_Type -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_by_Seat_Type">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasSeatType"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:comment>Surveys by Seat Type</rdfs:comment>
+        <rdfs:label>Survey By Seat Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Year -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Year">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date"/>
+        <rdfs:comment>Survey&apos;s year</rdfs:comment>
+        <rdfs:label>Year</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft">
+        <rdfs:comment>The aircraft/s used in the trip</rdfs:comment>
+        <rdfs:label>Aircraft</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Aircraft</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:comment>The title of the comment</rdfs:comment>
+        <rdfs:label>Comment Title</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <rdfs:comment>The full comment</rdfs:comment>
+        <rdfs:label>Comment Desc</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination">
+        <rdfs:comment>The destination city of the trip</rdfs:comment>
+        <rdfs:label>Destination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin">
+        <rdfs:comment>The origin city of the trip</rdfs:comment>
+        <rdfs:label>Origin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger">
+        <rdfs:comment>The passenger&apos;s name</rdfs:comment>
+        <rdfs:label>Passenger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type">
+        <rdfs:comment>The seat type used in the trip</rdfs:comment>
+        <rdfs:label>Seat Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller">
+        <rdfs:comment>Passenger&apos;s type of travel</rdfs:comment>
+        <rdfs:label>Type Of Traveller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline">
+        <rdfs:comment>The airline in the trip</rdfs:comment>
+        <rdfs:label>Airline</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Airline</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A350 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A350">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A350-1000 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A350-1000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A380 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A380">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A380-800 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A380-800">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#AlwaleedAlthani -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#AlwaleedAlthani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Australia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Auckland -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Auckland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Australia -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Australia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BDarnel -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BDarnel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BrianEnglish -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BrianEnglish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Business -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Business">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BusinessClass -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BusinessClass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#CBarker -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#CBarker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Canada -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Canada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#CoupleLeisure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#CoupleLeisure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Doha -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Doha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Dusseldorf -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Dusseldorf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#EconomyClass -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#EconomyClass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#FamilyLeisure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#FamilyLeisure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#FirstClass -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#FirstClass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Frankfurt -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Frankfurt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Germany -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Germany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#KilimanjaroViaDoha -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#KilimanjaroViaDoha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#London -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#London">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#LondonHeathrow -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#LondonHeathrow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#LondonHeathrowViaDoha -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#LondonHeathrowViaDoha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#MaryLe -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#MaryLe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#MelbourneViaDoha -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#MelbourneViaDoha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Montreal -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Montreal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NFoster -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NFoster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NewDelhi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NewDelhi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Perth -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Perth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#QandeelAhtasham -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#QandeelAhtasham">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Qatar -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Qatar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#SanFrancisco -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#SanFrancisco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#SoloLeisure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#SoloLeisure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Tokyo -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Tokyo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedKingdom -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedKingdom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedStates -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedStates">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WWarnock -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WWarnock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WayneBurgess -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WayneBurgess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#qatar_airways -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#qatar_airways">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#ryanAir -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#ryanAir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Day"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Month"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <hasAircraft rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A350"/>
+        <hasAirline rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#qatar_airways"/>
+        <hasDateFlown rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023"/>
+        <hasDestination rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Doha"/>
+        <hasOrigin rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Auckland"/>
+        <hasPassenger rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WWarnock"/>
+        <hasSeatType rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BusinessClass"/>
+        <hasTypeOfTravel rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Business"/>
+        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasMonth>
+        <hasOverallRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasOverallRating>
+        <isVerified rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isVerified>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#10 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#12 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Month"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <hasAircraft rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A380"/>
+        <hasAirline rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#qatar_airways"/>
+        <hasDateFlown rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023"/>
+        <hasDestination rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Perth"/>
+        <hasOrigin rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Doha"/>
+        <hasOverallRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasOverallRating>
+        <isVerified rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isVerified>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2023 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2023">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Month"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+        <hasAircraft rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A380-800"/>
+        <hasAirline rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#qatar_airways"/>
+        <hasDate rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023"/>
+        <hasOverallRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasOverallRating>
+        <isVerified rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isVerified>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#6 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#7 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#8 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#9 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787-9/A330-300 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787-9/A330-300">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787/777 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787/777">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BusinessClassSurvey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Economy_Class_Survey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#First_Class_Survey"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Detractor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Neutral"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Promoter"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#X">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#over">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#Y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>Show surveys and passengers who are promoters</rdfs:comment>
+        <rdfs:label>rule1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#over"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="urn:swrl:var#over"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#Y"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="urn:swrl:var#over"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Promoter"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#Y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Promoter"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>Show surveys and passengers who are Detractors</rdfs:comment>
+        <rdfs:label>rule3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#over"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="urn:swrl:var#over"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#Y"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="urn:swrl:var#over"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Detractor"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#Y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Detractor"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>Show surveys and passengers who are neutral</rdfs:comment>
+        <rdfs:label>rule2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#over"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="urn:swrl:var#over"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#Y"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="urn:swrl:var#over"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Neutral"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#Y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Neutral"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
