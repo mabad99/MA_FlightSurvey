@@ -1,0 +1,717 @@
+@prefix : <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix FlightsSurvey: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#> .
+@base <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey/> .
+
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAircraft
+FlightsSurvey:hasAircraft rdf:type owl:ObjectProperty ;
+                          rdfs:domain FlightsSurvey:Survey ;
+                          rdfs:range <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> ;
+                          rdfs:comment "has Aircraft" ;
+                          rdfs:label "hasAircraft" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAirline
+FlightsSurvey:hasAirline rdf:type owl:ObjectProperty ;
+                         rdfs:domain FlightsSurvey:Survey ;
+                         rdfs:range <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> ;
+                         rdfs:comment "has Airline" ;
+                         rdfs:label "hasAirline" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDate
+FlightsSurvey:hasDate rdf:type owl:ObjectProperty ;
+                      rdfs:domain FlightsSurvey:Survey ;
+                      rdfs:range FlightsSurvey:Date ;
+                      rdfs:comment "has Date" ;
+                      rdfs:label "hasDate" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDateFlown
+FlightsSurvey:hasDateFlown rdf:type owl:ObjectProperty ;
+                           rdfs:domain FlightsSurvey:Survey ;
+                           rdfs:range FlightsSurvey:Date ;
+                           rdfs:comment "has Date Flown" ;
+                           rdfs:label "hasDateFlown" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDestination
+FlightsSurvey:hasDestination rdf:type owl:ObjectProperty ;
+                             rdfs:domain FlightsSurvey:Survey ;
+                             rdfs:range <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> ;
+                             rdfs:comment "has Destination" ;
+                             rdfs:label "hasDestination" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOrigin
+FlightsSurvey:hasOrigin rdf:type owl:ObjectProperty ;
+                        rdfs:domain FlightsSurvey:Survey ;
+                        rdfs:range <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> ;
+                        rdfs:comment "has Origin" ;
+                        rdfs:label "hasOrigin" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger
+FlightsSurvey:hasPassenger rdf:type owl:ObjectProperty ;
+                           rdfs:domain FlightsSurvey:Survey ;
+                           rdfs:range <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> ;
+                           rdfs:comment "The passenger of the survey" ;
+                           rdfs:label "hasPassenger" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPublished
+FlightsSurvey:hasPublished rdf:type owl:ObjectProperty ;
+                           rdfs:domain FlightsSurvey:Survey ;
+                           rdfs:range <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> ;
+                           rdfs:comment "has Published" ;
+                           rdfs:label "hasPublished" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasSeatType
+FlightsSurvey:hasSeatType rdf:type owl:ObjectProperty ;
+                          rdfs:domain FlightsSurvey:Survey ;
+                          rdfs:range <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> ;
+                          rdfs:comment "has Seat Type" ;
+                          rdfs:label "hasSeatType" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasTypeOfTravel
+FlightsSurvey:hasTypeOfTravel rdf:type owl:ObjectProperty ;
+                              rdfs:domain FlightsSurvey:Survey ;
+                              rdfs:range <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> ;
+                              rdfs:comment "has Type of Travel" ;
+                              rdfs:label "hasTypeOfTraveller" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isFrom
+FlightsSurvey:isFrom rdf:type owl:ObjectProperty ;
+                     rdfs:domain <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> ;
+                     rdfs:range FlightsSurvey:Country ;
+                     rdfs:comment "Passenger isFrom" ;
+                     rdfs:label "isFrom" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasMonth
+FlightsSurvey:hasMonth rdf:type owl:DatatypeProperty ;
+                       rdfs:domain FlightsSurvey:Survey ;
+                       rdfs:range [ rdf:type rdfs:Datatype ;
+                                    owl:onDatatype xsd:integer ;
+                                    owl:withRestrictions ( [ xsd:minInclusive 1
+                                                           ]
+                                                           [ xsd:maxInclusive 12
+                                                           ]
+                                                         )
+                                  ] ;
+                       rdfs:comment "The month of the survey" ;
+                       rdfs:label "hasMonth" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating
+FlightsSurvey:hasOverallRating rdf:type owl:DatatypeProperty ;
+                               rdfs:domain FlightsSurvey:Survey ;
+                               rdfs:range [ rdf:type rdfs:Datatype ;
+                                            owl:onDatatype xsd:integer ;
+                                            owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                   ]
+                                                                   [ xsd:maxInclusive 10
+                                                                   ]
+                                                                 )
+                                          ] ;
+                               rdfs:comment "has Overall Rating" ;
+                               rdfs:label "hasOverallRating" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isVerified
+FlightsSurvey:isVerified rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain FlightsSurvey:Survey ;
+                         rdfs:range [ rdf:type rdfs:Datatype ;
+                                      owl:onDatatype xsd:integer ;
+                                      owl:withRestrictions ( [ xsd:minInclusive 0
+                                                             ]
+                                                             [ xsd:maxInclusive 1
+                                                             ]
+                                                           )
+                                    ] ;
+                         rdfs:comment "[0-> Not verified ; 1->Verified]" ;
+                         rdfs:label "isVerified" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BusinessClassSurvey
+FlightsSurvey:BusinessClassSurvey rdf:type owl:Class ;
+                                  rdfs:subClassOf FlightsSurvey:Survey_by_Seat_Type ;
+                                  rdfs:comment "Surveys of BussinessClass" ;
+                                  rdfs:label "Bussiness Class Survey" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Business_Survey
+FlightsSurvey:Business_Survey rdf:type owl:Class ;
+                              rdfs:subClassOf FlightsSurvey:Survey_By_Type_Of_Traveller ;
+                              rdfs:comment "Surveys of business travellers" ;
+                              rdfs:label "Business Traveller" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country
+FlightsSurvey:Country rdf:type owl:Class ;
+                      rdfs:comment "The country of the passenger" ;
+                      rdfs:label "Country" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Couple_Survey
+FlightsSurvey:Couple_Survey rdf:type owl:Class ;
+                            rdfs:subClassOf FlightsSurvey:Survey_By_Type_Of_Traveller ;
+                            rdfs:comment "Surveys of couple leisure travellers" ;
+                            rdfs:label "Couple Leisure Traveller" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date
+FlightsSurvey:Date rdf:type owl:Class ;
+                   rdfs:comment "The date of the survey" ;
+                   rdfs:label "Date" ;
+                   rdfs:sameAs "http://dbpedia.org/page/Date" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Day
+FlightsSurvey:Day rdf:type owl:Class ;
+                  rdfs:subClassOf FlightsSurvey:Date ;
+                  rdfs:comment "Survey's day" ;
+                  rdfs:label "Day" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Detractor
+FlightsSurvey:Detractor rdf:type owl:Class ;
+                        rdfs:subClassOf FlightsSurvey:NPS ;
+                        rdfs:comment "Overall rating less than 7" ;
+                        rdfs:label "Detractor" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Economy_Class_Survey
+FlightsSurvey:Economy_Class_Survey rdf:type owl:Class ;
+                                   rdfs:subClassOf FlightsSurvey:Survey_by_Seat_Type ;
+                                   rdfs:comment "Surveys of Economy Class" ;
+                                   rdfs:label "Economy Class Survey" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Family_Survey
+FlightsSurvey:Family_Survey rdf:type owl:Class ;
+                            rdfs:subClassOf FlightsSurvey:Survey_By_Type_Of_Traveller ;
+                            rdfs:comment "Surveys of family leisure travellers" ;
+                            rdfs:label "Family Leisure Traveller" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#First_Class_Survey
+FlightsSurvey:First_Class_Survey rdf:type owl:Class ;
+                                 rdfs:subClassOf FlightsSurvey:Survey_by_Seat_Type ;
+                                 rdfs:comment "Surveys of Firsts Class" ;
+                                 rdfs:label "First Class Survey" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#High_Season_Survey
+FlightsSurvey:High_Season_Survey rdf:type owl:Class ;
+                                 owl:equivalentClass [ owl:intersectionOf ( FlightsSurvey:Survey_by_Season
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty FlightsSurvey:hasMonth ;
+                                                                              owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                   owl:unionOf ( [ rdf:type rdfs:Datatype ;
+                                                                                                                   owl:oneOf [ rdf:type rdf:List ;
+                                                                                                                               rdf:first 10 ;
+                                                                                                                               rdf:rest rdf:nil
+                                                                                                                             ]
+                                                                                                                 ]
+                                                                                                                 [ rdf:type rdfs:Datatype ;
+                                                                                                                   owl:oneOf [ rdf:type rdf:List ;
+                                                                                                                               rdf:first 4 ;
+                                                                                                                               rdf:rest rdf:nil
+                                                                                                                             ]
+                                                                                                                 ]
+                                                                                                                 [ rdf:type rdfs:Datatype ;
+                                                                                                                   owl:oneOf [ rdf:type rdf:List ;
+                                                                                                                               rdf:first 5 ;
+                                                                                                                               rdf:rest rdf:nil
+                                                                                                                             ]
+                                                                                                                 ]
+                                                                                                                 [ rdf:type rdfs:Datatype ;
+                                                                                                                   owl:oneOf [ rdf:type rdf:List ;
+                                                                                                                               rdf:first 6 ;
+                                                                                                                               rdf:rest rdf:nil
+                                                                                                                             ]
+                                                                                                                 ]
+                                                                                                                 [ rdf:type rdfs:Datatype ;
+                                                                                                                   owl:oneOf [ rdf:type rdf:List ;
+                                                                                                                               rdf:first 7 ;
+                                                                                                                               rdf:rest rdf:nil
+                                                                                                                             ]
+                                                                                                                 ]
+                                                                                                                 [ rdf:type rdfs:Datatype ;
+                                                                                                                   owl:oneOf [ rdf:type rdf:List ;
+                                                                                                                               rdf:first 8 ;
+                                                                                                                               rdf:rest rdf:nil
+                                                                                                                             ]
+                                                                                                                 ]
+                                                                                                                 [ rdf:type rdfs:Datatype ;
+                                                                                                                   owl:oneOf [ rdf:type rdf:List ;
+                                                                                                                               rdf:first 9 ;
+                                                                                                                               rdf:rest rdf:nil
+                                                                                                                             ]
+                                                                                                                 ]
+                                                                                                               )
+                                                                                                 ]
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ] ;
+                                 rdfs:subClassOf FlightsSurvey:Survey_by_Season ;
+                                 rdfs:comment "High season surveys" ;
+                                 rdfs:label "High Season Survey" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Low_Season_Survey
+FlightsSurvey:Low_Season_Survey rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( FlightsSurvey:Survey_by_Season
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty FlightsSurvey:hasMonth ;
+                                                                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                  owl:unionOf ( [ rdf:type rdfs:Datatype ;
+                                                                                                                  owl:oneOf [ rdf:type rdf:List ;
+                                                                                                                              rdf:first 1 ;
+                                                                                                                              rdf:rest rdf:nil
+                                                                                                                            ]
+                                                                                                                ]
+                                                                                                                [ rdf:type rdfs:Datatype ;
+                                                                                                                  owl:oneOf [ rdf:type rdf:List ;
+                                                                                                                              rdf:first 11 ;
+                                                                                                                              rdf:rest rdf:nil
+                                                                                                                            ]
+                                                                                                                ]
+                                                                                                                [ rdf:type rdfs:Datatype ;
+                                                                                                                  owl:oneOf [ rdf:type rdf:List ;
+                                                                                                                              rdf:first 12 ;
+                                                                                                                              rdf:rest rdf:nil
+                                                                                                                            ]
+                                                                                                                ]
+                                                                                                                [ rdf:type rdfs:Datatype ;
+                                                                                                                  owl:oneOf [ rdf:type rdf:List ;
+                                                                                                                              rdf:first 2 ;
+                                                                                                                              rdf:rest rdf:nil
+                                                                                                                            ]
+                                                                                                                ]
+                                                                                                                [ rdf:type rdfs:Datatype ;
+                                                                                                                  owl:oneOf [ rdf:type rdf:List ;
+                                                                                                                              rdf:first 3 ;
+                                                                                                                              rdf:rest rdf:nil
+                                                                                                                            ]
+                                                                                                                ]
+                                                                                                              )
+                                                                                                ]
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] ;
+                                rdfs:subClassOf FlightsSurvey:Survey_by_Season ;
+                                rdfs:comment "Low season surveys" ;
+                                rdfs:label "Low Season Survey" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Month
+FlightsSurvey:Month rdf:type owl:Class ;
+                    rdfs:subClassOf FlightsSurvey:Date ;
+                    rdfs:comment "Survey's Month" ;
+                    rdfs:label "Month" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NPS
+FlightsSurvey:NPS rdf:type owl:Class ;
+                  rdfs:subClassOf FlightsSurvey:Survey ;
+                  rdfs:comment "NPS extracted from  survey's Overall Rating." ;
+                  rdfs:label "NPS" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Neutral
+FlightsSurvey:Neutral rdf:type owl:Class ;
+                      rdfs:subClassOf FlightsSurvey:NPS ;
+                      rdfs:comment "Overall rating between 7 and 9" ;
+                      rdfs:label "Neutral" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Promoter
+FlightsSurvey:Promoter rdf:type owl:Class ;
+                       rdfs:subClassOf FlightsSurvey:NPS ;
+                       rdfs:comment "Overall rating greater or equal  than 7" ;
+                       rdfs:label "Promoter" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Solo_Survey
+FlightsSurvey:Solo_Survey rdf:type owl:Class ;
+                          rdfs:subClassOf FlightsSurvey:Survey_By_Type_Of_Traveller ;
+                          rdfs:comment "Surveys of solo leisure travellers" ;
+                          rdfs:label "Solo Leisure Traveller" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey
+FlightsSurvey:Survey rdf:type owl:Class ;
+                     rdfs:comment "Survey data" ;
+                     rdfs:label "Survey" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_By_Type_Of_Traveller
+FlightsSurvey:Survey_By_Type_Of_Traveller rdf:type owl:Class ;
+                                          owl:equivalentClass [ owl:intersectionOf ( FlightsSurvey:Survey
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty FlightsSurvey:hasTypeOfTravel ;
+                                                                                       owl:someValuesFrom <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller>
+                                                                                     ]
+                                                                                   ) ;
+                                                                rdf:type owl:Class
+                                                              ] ;
+                                          rdfs:subClassOf FlightsSurvey:Survey ;
+                                          rdfs:comment "Survey By Type Of Traveller" ;
+                                          rdfs:label "Survey By Type Of Traveller" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_by_Season
+FlightsSurvey:Survey_by_Season rdf:type owl:Class ;
+                               owl:equivalentClass [ owl:intersectionOf ( FlightsSurvey:Survey
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty FlightsSurvey:hasMonth ;
+                                                                            owl:someValuesFrom xsd:integer
+                                                                          ]
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ] ;
+                               rdfs:subClassOf FlightsSurvey:Survey ;
+                               rdfs:comment "Surveys by seasons" ;
+                               rdfs:label "Survey By Season" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey_by_Seat_Type
+FlightsSurvey:Survey_by_Seat_Type rdf:type owl:Class ;
+                                  owl:equivalentClass [ owl:intersectionOf ( FlightsSurvey:Survey
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty FlightsSurvey:hasSeatType ;
+                                                                               owl:someValuesFrom <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type>
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ] ;
+                                  rdfs:subClassOf FlightsSurvey:Survey ;
+                                  rdfs:comment "Surveys by Seat Type" ;
+                                  rdfs:label "Survey By Seat Type" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Year
+FlightsSurvey:Year rdf:type owl:Class ;
+                   rdfs:subClassOf FlightsSurvey:Date ;
+                   rdfs:comment "Survey's year" ;
+                   rdfs:label "Year" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> rdf:type owl:Class ;
+                                                                                    rdfs:comment "The aircraft/s used in the trip" ;
+                                                                                    rdfs:label "Aircraft" ;
+                                                                                    rdfs:sameAs "https://dbpedia.org/page/Aircraft" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf FlightsSurvey:Survey ;
+                                                                                         rdfs:comment "The title of the comment" ;
+                                                                                         rdfs:label "Comment Title" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf FlightsSurvey:Survey ;
+                                                                                        rdfs:comment "The full comment" ;
+                                                                                        rdfs:label "Comment Desc" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> rdf:type owl:Class ;
+                                                                                       rdfs:comment "The destination city of the trip" ;
+                                                                                       rdfs:label "Destination" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> rdf:type owl:Class ;
+                                                                                  rdfs:comment "The origin city of the trip" ;
+                                                                                  rdfs:label "Origin" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> rdf:type owl:Class ;
+                                                                                     rdfs:comment "The passenger's name" ;
+                                                                                     rdfs:label "Passenger" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> rdf:type owl:Class ;
+                                                                                     rdfs:comment "The seat type used in the trip" ;
+                                                                                     rdfs:label "Seat Type" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> rdf:type owl:Class ;
+                                                                                             rdfs:comment "Passenger's type of travel" ;
+                                                                                             rdfs:label "Type Of Traveller" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> rdf:type owl:Class ;
+                                                                                       rdfs:comment "The airline in the trip" ;
+                                                                                       rdfs:label "Airline" ;
+                                                                                       rdfs:sameAs "https://dbpedia.org/page/Airline" .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdfs:subClassOf owl:Thing .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( FlightsSurvey:BusinessClassSurvey
+                FlightsSurvey:Economy_Class_Survey
+                FlightsSurvey:First_Class_Survey
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( FlightsSurvey:Detractor
+                FlightsSurvey:Neutral
+                FlightsSurvey:Promoter
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#X> rdf:type swrl:Variable .
+
+<urn:swrl:var#over> rdf:type swrl:Variable .
+
+<urn:swrl:var#Y> rdf:type swrl:Variable .
+
+[ rdfs:comment "Show surveys and passengers who are neutral" ;
+   rdfs:label "rule2" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate FlightsSurvey:hasOverallRating ;
+                           swrl:argument1 <urn:swrl:var#X> ;
+                           swrl:argument2 <urn:swrl:var#over>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                      swrl:builtin swrlb:lessThan ;
+                                      swrl:arguments [ rdf:type rdf:List ;
+                                                       rdf:first <urn:swrl:var#over> ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first 9 ;
+                                                                  rdf:rest rdf:nil
+                                                                ]
+                                                     ]
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate FlightsSurvey:Survey ;
+                                                 swrl:argument1 <urn:swrl:var#X>
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate FlightsSurvey:hasPassenger ;
+                                                            swrl:argument1 <urn:swrl:var#X> ;
+                                                            swrl:argument2 <urn:swrl:var#Y>
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                       swrl:builtin swrlb:greaterThanOrEqual ;
+                                                                       swrl:arguments [ rdf:type rdf:List ;
+                                                                                        rdf:first <urn:swrl:var#over> ;
+                                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                                   rdf:first 7 ;
+                                                                                                   rdf:rest rdf:nil
+                                                                                                 ]
+                                                                                      ]
+                                                                     ] ;
+                                                           rdf:rest rdf:nil
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate FlightsSurvey:Neutral ;
+                           swrl:argument1 <urn:swrl:var#Y>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate FlightsSurvey:Neutral ;
+                                      swrl:argument1 <urn:swrl:var#X>
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ]
+ ] .
+
+[ rdfs:comment "Show surveys and passengers who are promoters" ;
+   rdfs:label "rule1" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate FlightsSurvey:hasOverallRating ;
+                           swrl:argument1 <urn:swrl:var#X> ;
+                           swrl:argument2 <urn:swrl:var#over>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                      swrl:builtin swrlb:lessThanOrEqual ;
+                                      swrl:arguments [ rdf:type rdf:List ;
+                                                       rdf:first <urn:swrl:var#over> ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first 10 ;
+                                                                  rdf:rest rdf:nil
+                                                                ]
+                                                     ]
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate FlightsSurvey:Survey ;
+                                                 swrl:argument1 <urn:swrl:var#X>
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate FlightsSurvey:hasPassenger ;
+                                                            swrl:argument1 <urn:swrl:var#X> ;
+                                                            swrl:argument2 <urn:swrl:var#Y>
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                       swrl:builtin swrlb:greaterThanOrEqual ;
+                                                                       swrl:arguments [ rdf:type rdf:List ;
+                                                                                        rdf:first <urn:swrl:var#over> ;
+                                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                                   rdf:first 9 ;
+                                                                                                   rdf:rest rdf:nil
+                                                                                                 ]
+                                                                                      ]
+                                                                     ] ;
+                                                           rdf:rest rdf:nil
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate FlightsSurvey:Promoter ;
+                           swrl:argument1 <urn:swrl:var#Y>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate FlightsSurvey:Promoter ;
+                                      swrl:argument1 <urn:swrl:var#X>
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ]
+ ] .
+
+[ rdfs:comment "Show surveys and passengers who are Detractors" ;
+   rdfs:label "rule3" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate FlightsSurvey:hasOverallRating ;
+                           swrl:argument1 <urn:swrl:var#X> ;
+                           swrl:argument2 <urn:swrl:var#over>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                      swrl:builtin swrlb:lessThan ;
+                                      swrl:arguments [ rdf:type rdf:List ;
+                                                       rdf:first <urn:swrl:var#over> ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first 7 ;
+                                                                  rdf:rest rdf:nil
+                                                                ]
+                                                     ]
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate FlightsSurvey:Survey ;
+                                                 swrl:argument1 <urn:swrl:var#X>
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate FlightsSurvey:hasPassenger ;
+                                                            swrl:argument1 <urn:swrl:var#X> ;
+                                                            swrl:argument2 <urn:swrl:var#Y>
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                       swrl:builtin swrlb:greaterThanOrEqual ;
+                                                                       swrl:arguments [ rdf:type rdf:List ;
+                                                                                        rdf:first <urn:swrl:var#over> ;
+                                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                                   rdf:first 0 ;
+                                                                                                   rdf:rest rdf:nil
+                                                                                                 ]
+                                                                                      ]
+                                                                     ] ;
+                                                           rdf:rest rdf:nil
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate FlightsSurvey:Detractor ;
+                           swrl:argument1 <urn:swrl:var#Y>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate FlightsSurvey:Detractor ;
+                                      swrl:argument1 <urn:swrl:var#X>
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
